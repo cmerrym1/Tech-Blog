@@ -1,30 +1,23 @@
 {
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "connect-session-sequelize": "^7.1.2",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "express-handlebars": "^6.0.2",
-    "express-session": "^1.17.2",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.16.2"
-  },
-  "name": "tech-blog",
-  "description": "This app is designed to allow developers a place to blog about tech. Hence the clever name, Tech Blog.",
+  "name": "newsfeed-api",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "jest",
+    "start": "node server.js",
+    "seeds": "node seeds/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cmerrym1/Tech-Blog.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cmerrym1/Tech-Blog/issues"
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5"
   },
-  "homepage": "https://github.com/cmerrym1/Tech-Blog#readme"
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
 }
