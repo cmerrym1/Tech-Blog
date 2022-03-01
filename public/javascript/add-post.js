@@ -22,4 +22,12 @@ async function newFormHandler(event) {
     }
   }
   
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
   document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
